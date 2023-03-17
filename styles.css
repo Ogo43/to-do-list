@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(11, 11, 210);
+    background: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+.to-do {
+    background-color: #faf6f6;
+    font-size: 20px;
+    color: rgb(34, 34, 236);
+}
+
+#word {
+    background-color: #f6f2f2;
+    border-radius: 2px;
+    border-color: #1c1cc1;
+}
+
+#add {
+    background-color: #0505e4;
+    color: #faeeee;
+    border-color: #0505e4;
+}
+
