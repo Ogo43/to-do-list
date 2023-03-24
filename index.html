@@ -8,45 +8,42 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <header>
-        <p>Todo List using JavaScript</p>
-    </header>
-
     <main>
+        <h1>Todo List using JavaScript</h1>
 
-        <form id="todo-form">
-            <input 
+        <section id="todo_task" class="todo_list">
+            <form class="todo_cards">
+                <input 
                 type="text" 
+                value="" 
                 id="todo-input"
-                placeholder="Enter list"/>
-            <input 
-                type="submit"
-                id="todo-submit" 
-                value="Add"/>
-        </form>
-        
-        <section class="todo-list">
+                placeholder="Enter task"/>
 
-            <div id="individual-list">
+                <input 
+                type="button"
+                value="Add"
+                id="add-input"
+                />
+            </form>
 
-                <div class="todo">
-                    <div class="content">
+            <div class="list-wrapper">
+                <ul class="unordered-list">
+                    <li class="list">
                         <input 
-                            type="text" 
-                            class="text"
-                            value="My movie time"
-                            readonly
+                        type="text" 
+                        value=""
+                        disabled
+                        class="editable-input"
                         />
-                    </div>
-                    <div class="action">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-                </div>
-                
+        
+                        <div class="btn-wrapper">
+                        <button class="edit" id="edit-task"><i class='bx bx-edit' ></i>Edit</button> 
+                        <button class="delete" id="delete-task"><i class='bx bx-trash'></i>Delete</button>
+                        </div> 
+                    </li>
+                </ul>
             </div>
         </section>
-
     </main>
    
 

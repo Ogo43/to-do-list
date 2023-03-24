@@ -1,41 +1,86 @@
 :root {
-    --dark-blue: #1717e8;
-    --light-blue: #2e2eea;
-    --pink: #EC4899;
-    --dark-pink: #d161ff; 
-    --white: #EEE;  
-    --purple: #8052ec;   
+    --dark-blue: #4444f4;
+    --dark-pink: #a226d3;
+    --white: #eee;
+    --purple: #7038f1;
 }
 
 * {
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
-    /*display: flex;
-    flex-direction: column;
+body {
+    background-color: var(--purple);
+}
+
+h1 {
+    border: 2px solid rgb(9, 25, 9);
+    background-color: var(--white);
+    color: var(--dark-pink);
+    font-size: 1.5rem;
+    margin: 6rem auto 1rem;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh; */
-    background: var(--purple);
-    color: var(--white);
-}
-
-header {
-    padding: 2rem 1rem;
-    margin: 0 auto;
-    width: 100%;
-    height: 30px;
-    background: #EEE;
-    text-align: center;
-}
-
-header p {
-    border: 2px solid red;
-    background: var(--white);
-    color: var(--light-blue);
     
 }
 
+.todo_list {
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+.todo_cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   border: 2px dashed green;
+   margin: 0 0 1rem 0;
+}
+
+.add-input{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.list-wrapper, .unordered-list{
+    width: 100%
+}
+.unordered-list{
+    list-style: none;
+    padding: 0
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+.editable-input{
+    border: 2px solid blue;
+    flex-basis: 0 1 45%;
+}
+.btn-wrapper{
+    display: flex;
+    flex-basis: 0 1 40%;
+}
+
+.edit{
+    margin-right: 1rem;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.delete{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-size: 1rem;
+}
