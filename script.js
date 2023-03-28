@@ -35,9 +35,22 @@ let generateTemplate = ()=>{
     })
 }
 
+function initialization(){
+    let data = localStorage.getItem("todos");
+    // console.log(typeof data)
+    if(data){
+        todo_arr = [...data.split(",")];
+        generateTemplate();
+    }
+    return
+}
+initialization();
+
 inputText.addEventListener("change", (e) => {
     e.preventDefault();
      todo_arr.push(e.target.value);
+    // storing todo_arr in the local storage
+    localStorage.setItem('todos',todo_arr);
      e.target.value="";
      
 
@@ -52,5 +65,6 @@ todo_wrapper.addEventListener("click", (e)=>{
 
     let new_todo_arr = todo_arr.slice(0, ID).concat(todo_arr.slice(ID + 1))
     todo_arr = new_todo_arr
+    localStorage.setItem("todos",todo_arr)
     generateTemplate()
 })
