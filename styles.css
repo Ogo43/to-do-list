@@ -16,7 +16,6 @@ body {
 }
 
 h1 {
-    border: 2px solid rgb(9, 25, 9);
     background-color: var(--white);
     color: var(--dark-pink);
     font-size: 1.5rem;
@@ -38,10 +37,9 @@ h1 {
 }
 
 .todo_cards{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-   border: 2px dashed green;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
    margin: 0 0 1rem 0;
 }
 
@@ -64,7 +62,6 @@ h1 {
     justify-content: space-between;
 }
 .editable-input{
-    border: 2px solid blue;
     flex-basis: 0 1 45%;
 }
 .btn-wrapper{
