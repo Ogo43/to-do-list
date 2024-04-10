@@ -91,4 +91,7 @@ h1 {
   h1 {
     font-size: 1rem;  
 }
+.todo_list {
+    padding: 1.5rem;
+}
 }
