@@ -94,4 +94,7 @@ h1 {
 #todo_input {
     padding: 2px;
 }
+#todo task{
+    margin: 0 auto;
+}
 }
